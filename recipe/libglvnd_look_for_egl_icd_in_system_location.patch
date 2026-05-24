@@ -12,7 +12,7 @@ index c90f0ca..32effad 100644
 +  # conda-forge-specific patch: we patch the DEFAULT_EGL_VENDOR_CONFIG_DIRS
 +  # to point to the system path as well as the local prefix,
 +  # override at runtime with __EGL_VENDOR_LIBRARY_DIRS
-+  egl_vendor_config_dirs = '@0@/glvnd/egl_vendor.d:@1@/glvnd/egl_vendor.d:@2@/glvnd/egl_vendor.d:@3@/glvnd/egl_vendor.d'.format(
++  egl_vendor_config_dirs = '@0@/glvnd/egl_vendor.d:@1@/glvnd/egl_vendor.d:@2@/glvnd/egl_vendor.d:@3@/glvnd/egl_vendor.d:/usr/lib/x86_64-linux-gnu/GL/glvnd/egl_vendor.d:/usr/lib/aarch64-linux-gnu/GL/glvnd/egl_vendor.d'.format(
 +    join_paths(get_option('prefix'),'etc'),
 +    join_paths(join_paths(get_option('prefix'),'usr'),get_option('datadir')),
 +    '/etc',
