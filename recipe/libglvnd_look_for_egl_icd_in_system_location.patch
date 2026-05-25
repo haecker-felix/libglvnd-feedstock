@@ -2,7 +2,7 @@ diff --git a/src/EGL/meson.build b/src/EGL/meson.build
 index c90f0ca..32effad 100644
 --- a/src/EGL/meson.build
 +++ b/src/EGL/meson.build
-@@ -39,9 +39,14 @@ if host_machine.system() in ['haiku']
+@@ -39,9 +39,16 @@ if host_machine.system() in ['haiku']
    egl_vendor_config_dirs += ':/boot/system/non-packaged/add-ons/opengl/egl_vendor.d'
    egl_vendor_config_dirs += ':/boot/system/add-ons/opengl/egl_vendor.d'
  else
