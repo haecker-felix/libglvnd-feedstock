@@ -17,7 +17,7 @@ index c90f0ca..32effad 100644
 +    join_paths(join_paths(get_option('prefix'),'usr'),get_option('datadir')),
 +    '/etc',
 +    join_paths('/usr',get_option('datadir')),
-+    '/usr/lib/@TARGET_TRIPLE@/GL,
++    '/usr/lib/@TARGET_TRIPLE@/GL',
 +  )
  endif
  
