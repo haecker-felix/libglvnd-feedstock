@@ -5,7 +5,7 @@ triple=${target_platform#linux-}
 if [[ "$triple" == "64" ]]; then
   triple="x86_64"
 fi
-sed -i.bak "s/@TARGET_TRIPLE@/${triple}/g" src/EGL/meson.build
+sed -i.bak "s/@TARGET_TRIPLE@/${triple}-linux-gnu/g" src/EGL/meson.build
 cat src/EGL/meson.build
 
 # Get meson to find pkg-config when cross compiling
